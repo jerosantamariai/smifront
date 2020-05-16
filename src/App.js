@@ -4,6 +4,7 @@ import injectContext from './store/appContext';
 import Home from './views/home';
 import NotFound from './views/notfound';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 
 const App = props => {
   return (
@@ -13,6 +14,7 @@ const App = props => {
         <Route exact path="/" component={Home} />
         <Route component={NotFound} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   )
 }
